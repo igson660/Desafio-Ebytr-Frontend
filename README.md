@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+<div align="center" id="top"> 
+  &#xa0;
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1>Desafio Trybe</h1>  
 
-## Available Scripts
+  <img alt="Quantidade de linguagens utilizadas" src="https://img.shields.io/github/languages/count/GrupoCPB/FrontSiteONGPaisAfetivos?color=56BEB8">
 
-In the project directory, you can run:
 
-### `yarn start`
+## :rocket: Technologies ##
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [ReactJS](https://pt-br.reactjs.org/)
+- [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [React-Router-Dom](https://reactrouter.com)
+- [CSS3](https://www.w3schools.com/css/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## :checkered_flag: Starting ##
 
-### `yarn test`
+```bash
+# Clone this project
+$ git clone git@github.com:igson660/Desafio-Ebytr-Frontend.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Access
+$ cd Desafio-Ebytr-Frontend
 
-### `yarn build`
+# Install dependencies
+$ yarn / npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Run the project
+$ yarn start / npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# The server will initialize in the <http://localhost:3000>
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
 
-### `yarn eject`
+```
+src/
+ |--- components/   # Componentes
+ |--- pages/        # Páginas
+ |--- App.js        # Arquivo com configurações principais do App
+ |--- index.js      # Ponto de entrada para execução do nosso App
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Logbook
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Criando a aplicação com create-react-app
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+--> A criação de aplicações em React do zero, com as configurações do Webpack e do Babel e de todo o ambiente de desenvolvimento é bem interessante, pois deixa o ambiente customizável de acordo com as necessidades do seu projeto. Mas em alguns casos, o create-react-app facilita muito a vida por trazer boa parte dessas definições previamente configuradas. Portanto, utilizamos o seguinte comando para a criação da aplicação:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+$ yarn / npm create react-app  desafio_ebtrybe_frontend
+```
 
-## Learn More
+### Styled-components
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+--> A escolha do styled-components vem pela facilidade de customização de estilo através da criação de componentes estilizados utilizando javascript, é um recurso super interessante e poderoso, já que reduz o uso de classes e id's para determinação de estilos, problemas de acesso aos arquivos CSS e torna a legibilidade do código muito mais fácil de interpretar.
+--> Uma das vantagens da utilização do styled-components é que, assim como o sass, também permite o uso do encadeamento, ou seja, caso um elemento possua um outro elemento como filho, é possível realizar a estilização do mesmo dentro da estilização desse componente.
+--> Outra vantagem é a utilização da estilização limitada ao escopo em que o componente estilizado foi criado. Ele acaba gerando uma classe com uma chave única para que a estilização daquele componente não interfira no restante da aplicação.
