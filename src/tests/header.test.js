@@ -1,6 +1,15 @@
 import { render, screen } from '@testing-library/react';
 import Header from '../components/Header';
 
-test('renders learn react link', () => {
-  render(<Header />);
+describe('Testes do Componente Header', () => {
+  test('Verifica a renderização do componente', () => {
+    render(<Header />);
+  });
+
+  test('Verifica se possui Título', () => {
+    render(<Header />);
+
+    const title = screen.getAllByText(/Lista de tarefas/i)
+    expect(title).toBeInTheDocument();
+  });
 });
