@@ -12,10 +12,16 @@ describe('Testes da página Home', () => {
     expect(input).toBeInTheDocument();
   });
 
-  test('Verifica se a página possui um botão de enviar', () => {
+  test('Verifica se a página possui um botão de criar', () => {
     render(<Home />);
     const button = screen.getByText(/criar/i)
     expect(button).toBeInTheDocument();
+  });
+
+  test('Verifica se a página possui um campo para exibir todas as tarefasr', () => {
+    render(<Home />);
+    const tarefas = screen.getByText(/todas a tarefas/i)
+    expect(tarefas).toBeInTheDocument();
   });
 
 });
