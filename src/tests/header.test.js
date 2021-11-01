@@ -9,7 +9,7 @@ describe('Testes do Componente Header', () => {
   test('Verifica se possui Título', () => {
     render(<Header />);
 
-    const title = screen.getAllByText(/Lista de tarefas/i)
+    const title = screen.getByText(/lista de tarefas/i)
     expect(title).toBeInTheDocument();
   });
 });
