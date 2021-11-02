@@ -1,6 +1,13 @@
-import Header from '../components/Header'
+import React, { useEffect } from 'react'
+import Header from '../components/Header';
+import { getAllTasks } from '../service/requests'
 
 function Home() {
+  useEffect(() => {
+    const allTasks = getAllTasks()
+    console.log(allTasks);
+  }, []);
+
   return (
     <> 
       <Header />
