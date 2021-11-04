@@ -22,7 +22,7 @@ function Home() {
   return (
     <Conteiner>
       { isLoading ? <p>carregango...</p> : null }
-      <section>
+      <section id="add-task">
         <h1>Adcionar tarefa</h1>
         <input
           type="text"
@@ -34,23 +34,25 @@ function Home() {
           type="submit"
           onClick={ () => addTask(task) }
           >
-            Criar
+            Adiocinar
           </button>
       </section>
-      <section>
-        <h1>Todas a Tarefas</h1>
+      <section id="all-tasks">
+        <h2>Todas a Tarefas</h2>
           <ul>
           {
             tasks.map(({ Task, _id }) => (
-              <>
-                <li>{ Task }</li>
-                <button>Editar</button>
-                <button
-                type="submit"
-                onClick={ () => excludeTask(_id) }
-                >Remover</button>
+              <div>
+                <div>
+                  <li>{ Task }</li>
+                  <button>Editar</button>
+                  <button
+                  type="submit"
+                  onClick={ () => excludeTask(_id) }
+                  >Remover</button>
+                </div>
                 <Form />
-              </>
+              </div>
             ))
           }
           </ul>

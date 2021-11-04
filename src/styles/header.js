@@ -5,12 +5,16 @@ export const Conteiner = styled.div`
     padding: 15px;
 
     header {
-      background-color: aquamarine;
       margin: 10px;
     }
 
     h1 {
-      color: azure;
+      color: #1C1C1C;
       text-align: center;
+      font-size: 60px;
+      border-style: groove;
+      border-top: none ;
+      border-left: none;
+      border-right: none;
     }
 `;
