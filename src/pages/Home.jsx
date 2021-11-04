@@ -1,6 +1,7 @@
 import React, { useEffect , useState } from 'react';
 import { getAllTasks, addTask, excludeTask } from '../service/requests';
 import { Conteiner } from '../styles/home';
+import Form from '../components/Form';
 
 function Home() {
   const [isLoading, setIsLoading] = useState(false);
@@ -48,7 +49,7 @@ function Home() {
                 type="submit"
                 onClick={ () => excludeTask(_id) }
                 >Remover</button>
-                
+                <Form />
               </>
             ))
           }
