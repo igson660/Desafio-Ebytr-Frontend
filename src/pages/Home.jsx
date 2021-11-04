@@ -1,6 +1,6 @@
-import React, { useEffect , useState } from 'react'
-import Header from '../components/Header';
-import { getAllTasks, addTask, excludeTask } from '../service/requests'
+import React, { useEffect , useState } from 'react';
+import { getAllTasks, addTask, excludeTask } from '../service/requests';
+import { Conteiner } from '../styles/home';
 
 function Home() {
   const [isLoading, setIsLoading] = useState(false);
@@ -19,8 +19,7 @@ function Home() {
   }, []);
 
   return (
-    <> 
-      <Header />
+    <Conteiner>
       { isLoading ? <p>carregango...</p> : null }
       <section>
         <h1>Adcionar tarefa</h1>
@@ -55,7 +54,7 @@ function Home() {
           }
           </ul>
       </section>
-    </>
+    </Conteiner>
   );
 }
 

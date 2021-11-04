@@ -1,8 +1,13 @@
 import Home from './pages/Home'
+import Header from './components/Header';
+import { Conteiner } from './styles/app';
 
 function App() {
   return (
-    <Home />
+    <Conteiner>
+      <Header />
+      <Home />
+    </Conteiner>
   );
 }
 

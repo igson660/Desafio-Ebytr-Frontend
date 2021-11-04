@@ -1,6 +1,12 @@
+import { Conteiner } from '../styles/header'
+
 function Header() {
   return (
-    <h1>Lista de Tarefas</h1>
+    <Conteiner>
+      <header>
+        <h1>Lista de Tarefas</h1>
+      </header>
+    </Conteiner>
   );
 }
 
