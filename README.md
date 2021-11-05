@@ -12,7 +12,7 @@
 
 - [ReactJS](https://pt-br.reactjs.org/)
 - [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-- [React-Router-Dom](https://reactrouter.com)
+- [Style-Component](https://reactrouter.com)
 - [CSS3](https://www.w3schools.com/css/)
 
 ## :checkered_flag: Starting ##
