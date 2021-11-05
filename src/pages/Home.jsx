@@ -43,13 +43,10 @@ function Home() {
           {
             tasks.map(({ Task, _id }) => (
               <div>
-                <div>
+                <div id="task">
                   <li>{ Task }</li>
-                  <button>Editar</button>
-                  <button
-                  type="submit"
-                  onClick={ () => excludeTask(_id) }
-                  >Remover</button>
+                  <button type="submit" onClick={ () => excludeTask(_id) }>Editar</button>
+                  <button type="submit" onClick={ () => excludeTask(_id) }>Remover</button>
                 </div>
                 <Form />
               </div>

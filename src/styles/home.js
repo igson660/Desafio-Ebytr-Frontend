@@ -26,7 +26,7 @@ export const Conteiner = styled.div`
     }
 
     button {
-      margin: 5px;
+      margin: -3px;
     }
   }
 
@@ -36,25 +36,38 @@ export const Conteiner = styled.div`
     align-items: initial;
     justify-content: center;
     margin: 30px;
+
     h2 {
-      margin: 10px;
+      margin: 0 10PX;
     }
 
     div{
+      margin: 3px;
+      margin-bottom: 10PX;
+      padding: 0;
+      &:hover{
+        opacity:85%;
+      }
 
-      div{
+      #task{
+        margin: 0;
         display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: initial;
+        border-style: groove;
+        border-bottom: none ;
+        border-left: none;
+        border-right: none;
+
+        li {
+          list-style: none;
+        }
+
+        button {
+          margin: 3px;
+        }
       } 
     }
-
-    li {
-      list-style: none;
-      border-style: groove;
-      border-bottom: none ;
-      border-left: none;
-      border-right: none;
-    }
-}
+  }
 `;

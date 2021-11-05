@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Conteiner = styled.div`
-  width: 100%;
   align-content: center;
   font-size: 10px;
 
@@ -11,9 +10,9 @@ export const Conteiner = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-  }
 
-  div{
-    margin: 3px;
+    div{
+      width: 85px;
+    }
   }
 `;
