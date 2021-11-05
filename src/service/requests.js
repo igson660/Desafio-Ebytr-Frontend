@@ -16,8 +16,9 @@ export function addTask(task) {
 
   try {
     fetch('http://localhost:3001/', {
-      method: "POST",
-      header: { "Content-Type": "application/json" },
+      method: 'POST',
+      header: { 'Content-Type': 'application/json' },
+      mode: 'cors',
       body: JSON.stringify(body)
     });
   } catch (error) {
@@ -43,7 +44,7 @@ export function excludeTask(id) {
   try {
     fetch('http://localhost:3001/', {
       method: "DELETE",
-      header: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
     });
   } catch (error) {

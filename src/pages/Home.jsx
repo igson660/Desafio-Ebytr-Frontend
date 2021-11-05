@@ -1,22 +1,16 @@
 import React, { useEffect , useState } from 'react';
-import { getAllTasks, addTask, excludeTask } from '../service/requests';
 import { Conteiner } from '../styles/home';
 import Form from '../components/Form';
+import { handTasks, add, del } from '../utils/utils'
 
 function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [tasks, setTasks] = useState([])
   const [task, setTask] = useState()
-
-  const handTasks = async () => {
-    const data = await getAllTasks();
-    setTasks(data);
-    setIsLoading(false);
-  }
   
   useEffect(() => {
     setIsLoading(true)
-    handTasks();
+    handTasks(setTasks, setIsLoading);
   }, []);
 
   return (
@@ -32,9 +26,9 @@ function Home() {
           />
         <button
           type="submit"
-          onClick={ () => addTask(task) }
+          onClick={ () => add(task) }
           >
-            Adiocinar
+            Adicionar
           </button>
       </section>
       <section id="all-tasks">
@@ -45,8 +39,8 @@ function Home() {
               <div>
                 <div id="task">
                   <li>{ Task }</li>
-                  <button type="submit" onClick={ () => excludeTask(_id) }>Editar</button>
-                  <button type="submit" onClick={ () => excludeTask(_id) }>Remover</button>
+                  <button type="submit" onClick={ () => del(_id) }>Editar</button>
+                  <button type="submit" onClick={ () => del(_id) }>Remover</button>
                 </div>
                 <Form />
               </div>

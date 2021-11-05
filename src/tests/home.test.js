@@ -14,7 +14,7 @@ describe('Testes da página Home', () => {
 
   test('Verifica se a página possui um botão de criar', () => {
     render(<Home />);
-    const button = screen.getByText(/criar/i)
+    const button = screen.getByText(/adicionar/i)
     expect(button).toBeInTheDocument();
   });
 
